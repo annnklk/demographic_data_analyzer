@@ -59,8 +59,6 @@ def calculate_demographic_data(print_data=True):
     IN_occupation = df[(df['salary'] == '>50K') & (df['native-country'] == 'India')]
     top_IN_occupation = IN_occupation['occupation'].value_counts().idxmax()
 
-    # DO NOT MODIFY BELOW THIS LINE
-
     if print_data:
         print("Number of each race:\n", race_count) 
         print("Average age of men:", average_age_men)
